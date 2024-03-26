@@ -4,6 +4,7 @@ import 'package:sizer/sizer.dart';
 import 'package:we_green_app/features/Auth/sign_in/screens/sign_in_screen.dart';
 import 'bindings/intialbindings.dart';
 import 'core/services/services.dart';
+import 'features/Splash/SplashScreen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       return GetMaterialApp(
         debugShowCheckedModeBanner: false,
         initialBinding: InitialBindings(),
-        home: SigninScreen(),
+        home: const SplashScreen(),
       );
     });
   }
